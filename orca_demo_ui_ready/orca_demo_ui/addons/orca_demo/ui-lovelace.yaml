@@ -1,0 +1,21 @@
+title: ORCA Demo UI
+views:
+  - title: Home
+    cards:
+      - type: vertical-stack
+        cards:
+          - type: picture-entity
+            image: /local/logo.png
+            entity: input_boolean.orca_demo_ui_button_1
+            show_name: false
+            show_state: false
+          - type: button
+            tap_action:
+              action: toggle
+            entity: input_boolean.orca_demo_ui_button_1
+            name: Button 1
+          - type: button
+            tap_action:
+              action: toggle
+            entity: input_boolean.orca_demo_ui_button_2
+            name: Button 2
