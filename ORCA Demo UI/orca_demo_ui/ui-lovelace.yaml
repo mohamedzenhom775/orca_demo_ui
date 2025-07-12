@@ -1,0 +1,19 @@
+title: ORCA Display
+views:
+  - title: Smart Room
+    cards:
+      - type: button
+        tap_action:
+          action: toggle
+        entity: input_boolean.demo_light
+        icon: mdi:lightbulb
+        name: Light
+      - type: button
+        tap_action:
+          action: toggle
+        entity: input_boolean.demo_ac
+        icon: mdi:air-conditioner
+        name: AC
+      - type: picture
+        image: /local/logo.png
+        alt_text: ORCA Logo
