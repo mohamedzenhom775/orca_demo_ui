@@ -1,0 +1,9 @@
+- alias: "Reset ORCA Demo UI Booleans"
+  trigger:
+    - platform: time_pattern
+      seconds: "/60"
+  action:
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.orca_demo_ui_button_1
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.orca_demo_ui_button_2

@@ -1,0 +1,15 @@
+homeassistant:
+  customize:
+    package.node_anchors:
+      !include "./node_anchors.yaml"
+
+lovelace:
+  mode: yaml
+
+input_boolean:
+  orca_demo_ui_button_1:
+    name: Button 1
+    initial: off
+  orca_demo_ui_button_2:
+    name: Button 2
+    initial: off
