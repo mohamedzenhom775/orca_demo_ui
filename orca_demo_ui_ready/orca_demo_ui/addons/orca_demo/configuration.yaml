@@ -1,0 +1,19 @@
+homeassistant:
+  customize:
+    package.node_anchors:
+      !include "./node_anchors.yaml"
+
+lovelace:
+  mode: yaml
+
+input_boolean:
+  orca_demo_ui_light:
+    name: Light
+    initial: off
+  orca_demo_ui_ac:
+    name: AC
+    initial: off
+
+homeassistant:
+  packages:
+    automations: !include automations.yaml
