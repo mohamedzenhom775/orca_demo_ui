@@ -1,0 +1,12 @@
+lovelace:
+  mode: yaml
+
+input_boolean:
+  demo_light:
+    name: Demo Light
+    initial: off
+  demo_ac:
+    name: Demo AC
+    initial: off
+
+automation: !include automations.yaml
